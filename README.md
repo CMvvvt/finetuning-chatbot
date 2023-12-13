@@ -17,6 +17,12 @@
   - [Model Configuration](#model-configuration)
   - [Training Configuration](#training-configuration)
   - [Training Process](#training-process)
+- [Experiment Results](#experiment-results)
+  - [Main Results](#main-results)
+  - [Supplementary Results](#supplementary-results)
+- [Discussions](#discussions)
+- [Conclusion](#conclusion)
+- [References](#references)
 
 # Usage Guide
 
@@ -154,9 +160,9 @@ This is the implementation description, for instruction to use this trained mode
 - **Training Execution**: Model trained on the preprocessed dataset.
 - **Model Saving**: Model and tokenizer saved to a specified directory, enable reusability for the trained model through "from_pretrained"
 
-# Experiment results
+# Experiment Results
 
-## Main results
+## Main Results
 
 ### gpt-neo-125m
 
@@ -226,7 +232,7 @@ We'll provide several examples to evaluate the performance of fine-tuned model.
 
 Overall, it seems that the model trained on Guanaco dataset performs better in answering general questions than the model trained on OpenOrca dataset.
 
-## Supplementary results
+## Supplementary Results
 
 After training the model, we've adjusted several parameters of the response generator, such as _do_sample_, _temperature_, _top_k_, _top_p_, etc.
 
