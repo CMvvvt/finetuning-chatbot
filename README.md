@@ -1,11 +1,22 @@
 # Finetuning pre-trained LLM model to build chatbot
 
-# Table of Contents
-
 - [Usage Guide](#usage-guide)
+  - [Installation](#installation)
+  - [Running](#running)
 - [Project Overview](#project-overview)
+  - [Abstract](#abstract)
+  - [Project Overview](#project-overview)
+  - [Problem Statement](#problem-statement)
 - [Dataset Description](#dataset-description)
-- [mplementation](#implementation)
+  - [Dataset Overview](#dataset-overview)
+  - [Background](#backgroound)
+  - [Basic Statistics](#basic-statistics)
+- [Implementation](#implementation)
+  - [Environment Setup](#environment-setup)
+  - [Dataset Preparation](#dataset-preparation)
+  - [Model Configuration](#model-configuration)
+  - [Training Configuration](#training-configuration)
+  - [Training Process](#training-process)
 
 # Usage Guide
 
@@ -35,7 +46,7 @@ Or you can use `running.ipynb` to run it step by step.
 
 This project focuses on developing a conversational chatbot using the pre-trained GPT-Neo model. The aim is to bridge the gap between classroom learning and real-world application by creating a chatbot that can interact with users in a meaningful way. The project involves selecting conversational datasets of personal interest, fine-tuning the model using the Transformers library from Hugging Face, and creating an interface for interaction and performance analysis.
 
-## Overview
+## Project Overview
 
 The project report details the process of developing a conversational chatbot, from dataset selection to final implementation. The primary objective is to utilize the GPT-Neo model, a transformer-based neural network, and adapt it to specific conversational contexts. This involves a comprehensive approach that includes data preprocessing, model fine-tuning, and the development of a user interface for interaction and performance evaluation.
 
@@ -73,7 +84,7 @@ Development of an interactive interface for the chatbot and analysis of its perf
 - openassistant-guanaco
 - OpenOrca
 
-## Overview
+## Dataset Overview
 
 - **Source**: Hugging Face
 - **Accessibility**: Public
@@ -141,7 +152,4 @@ This is the implementation description, for instruction to use this trained mode
 - **Trainer Initialization**: Using `SFTTrainer` from `trl`.
 - **Maximum Sequence Length**: 512.
 - **Training Execution**: Model trained on the preprocessed dataset.
-
-## Post-Training
-
 - **Model Saving**: Model and tokenizer saved to a specified directory, enable reusability for the trained model through "from_pretrained"
