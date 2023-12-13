@@ -127,9 +127,6 @@ training_arguments = TrainingArguments(
     lr_scheduler_type=lr_scheduler_type,
     remove_unused_columns=False,
     resume_from_checkpoint=True,
-    # use_mps_device=True,
-    # gradient_checkpointing=True,
-    # evaluation_strategy="epoch",
 )
 
 # Initialize trainer
